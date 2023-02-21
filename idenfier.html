@@ -9,23 +9,12 @@
 <body>
   <div id="root"></div>
   <script>
-    let itsMe = {
-      name:"LeeSemin",
-      age : 31,
-      job : "developer",
-      home: "galmadong",
-      hobby : {
-        first : "FPS게임",
-        second : "영상편집"
-      }
-    }
-    let a = "ho"
-    let b = "bby"
-    console.log(itsMe.hobby.first)
-    console.log(itsMe[a+b]["first"])
-    console.log(itsMe.hobby["second"])
-    console.log(itsMe["hobby"].second)
-    console.log(itsMe["hobby"]["second"])
+    let itsMe = ["LeeSemin",31,"developer","galmadong"]
+    console.log(typeof(itsMe))
+    console.log(itsMe[0])
+    console.log(itsMe[1])
+    console.log(itsMe[2])
+    console.log(itsMe[3])
   </script>
 </body>
 </html>
