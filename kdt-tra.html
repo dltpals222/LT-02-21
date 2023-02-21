@@ -21,8 +21,15 @@
       at : "arademy",
       order : ["QR코드","자리에 짐 풀기","물통","커피","화장실들림","커피타기","자리착석","홈페이지 로그인","노션, 슬렉 등 열기","어제 저녁 기록","어제 공부한거 리스트 보기","오늘 기록할 노션페이지 만들기","zoom들어가기"]
     }
-    let lifeCycle = [start, inPrograss, end]
-    console.log(lifeCycle)
+    let lifeCycle = [start, inPrograss, end];
+    console.log(lifeCycle[0].order[3]+start.order[4]);
+
+    let a = 0;
+    let length = lifeCycle[a].order.length;
+    
+    for (var i = 0; i < length; i++) {
+      console.log(lifeCycle[a].order[i])
+    }
 
   </script>
 </body>
