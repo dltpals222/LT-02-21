@@ -22,14 +22,55 @@
       order : ["QR코드","자리에 짐 풀기","물통","커피","화장실들림","커피타기","자리착석","홈페이지 로그인","노션, 슬렉 등 열기","어제 저녁 기록","어제 공부한거 리스트 보기","오늘 기록할 노션페이지 만들기","zoom들어가기"]
     }
     let lifeCycle = [start, inPrograss, end];
-    console.log(lifeCycle[0].order[3]+start.order[4]);
 
-    let a = 0;
+    console.log(lifeCycle[0].order[3]+" 후 "+start.order[4]+"챙기기");
+
+    //length 사용
+    let a = 2;
     let length = lifeCycle[a].order.length;
     
+    console.log("-------------------------")
+    
+    //반복문 사용
     for (var i = 0; i < length; i++) {
       console.log(lifeCycle[a].order[i])
     }
+
+    console.log("-------------------------")
+    
+    //조건문 사용(start일경우 home이 출력)
+    if (lifeCycle[a]===start) {
+      console.log(start.at)
+    } else {
+      console.log("start가 아닙니다.")
+    }
+
+    console.log("-------------------------")
+
+    //조건문 + 반복문 사용
+    if (lifeCycle[a]===start) {
+      console.log(lifeCycle[a].at+"에서 일어난 후")
+      for (var i = 0; i < length; i++) {
+      console.log(lifeCycle[a].order[i])
+      }
+      console.log("여기까지입니다.")
+      console.log("다음 숫자 " + (a+1) +"을 입력하세요")
+    } else if (lifeCycle[a]===inPrograss){
+      console.log(lifeCycle[a].at+" 학원가는 길")
+      for (var i = 0; i < length; i++) {
+      console.log(lifeCycle[a].order[i])
+      }
+      console.log("여기까지입니다.")
+      console.log("다음 숫자 " + (a+1) +"을 입력하세요")
+    } else {
+      console.log(lifeCycle[a].at+" 도착 후 수업전까지")
+      for (var i = 0; i < length; i++) {
+        console.log(lifeCycle[a].order[i])
+      }
+      console.log("마지막입니다.")
+    }
+    //(a+1)는 괄호를 넣어야 덧셈을 한다. 빼면 옆에 나란히.
+
 
   </script>
 </body>
