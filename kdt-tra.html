@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let start = {
+      at : "home",
+      order : ["일어나기","씻기","아침준비","식사","사과", "물통 챙기기","양치","옷입기","가방챙기기","마스크"]
+    }
+    let inPrograss = {
+      at : "road",
+      order : ["계단내려옴","문열기","내리막길","지하통로","5분 걸어감","신호등대기","건너기","3분 걸어감","학원 앞 신호등 대기","학원 앞 신호등 건너기","학원건물도착","약국","인공눈물구입","계단 3층올라감","305호 도착"]
+    }
+    let end = {
+      at : "arademy",
+      order : ["QR코드","자리에 짐 풀기","물통","커피","화장실들림","커피타기","자리착석","홈페이지 로그인","노션, 슬렉 등 열기","어제 저녁 기록","어제 공부한거 리스트 보기","오늘 기록할 노션페이지 만들기","zoom들어가기"]
+    }
+    let lifeCycle = [start, inPrograss, end]
+    console.log(lifeCycle)
+
+  </script>
+</body>
+</html>
