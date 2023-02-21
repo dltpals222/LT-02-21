@@ -17,6 +17,16 @@
     console.log(root);
     root = document;
     console.log(root);
+    console.log(typeof(root));
+    let a = root.getElementById('root');
+    console.log(a);
+    console.dir(a.children[1]);
+    console.dir(a.style);
+    let b = document.getElementById('root')
+    b.style.color = "green";
+    b.style.fontSize = "3em";
+    b.children[1].style.opacity = 0.5;
+    b.children[2].style.backgroundColor="gray";
   </script>
 </body>
 </html>
